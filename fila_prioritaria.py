@@ -22,11 +22,11 @@ class FilaPrioritaria:
         cliente_atual = self.fila.pop(0)
         self.clientes_atendidos.append(cliente_atual)
 
-        return (f’ Cliente atual: {cliente_atual }, dirija-se ao caixa: {caixa}’)
+        return (f'Cliente atual: {cliente_atual }, dirija-se ao caixa: {caixa}')
 
     def estatistica(self, dia:str, agencia:str, flag:str) -> dict:
         if flag != 'detail':
-            estatistica = {f'{agencia} - {dia}’ : len(self.clientes_atendidos)}
+            estatistica = {f'{agencia} - {dia}’ : len(self.clientes_atendidos)'}
         else:
             estatistica = {}
             estatistica['dia'] = dia
